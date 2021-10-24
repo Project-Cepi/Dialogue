@@ -40,6 +40,9 @@ dependencies {
     // Compile Minestom into project
     compileOnly("com.github.Minestom:Minestom:2ef8e957a0")
 
+    // Coroutines
+    compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+
     // Add KStom
     compileOnly("com.github.Project-Cepi:KStom:5daaf786cf")
 
