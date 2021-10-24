@@ -23,15 +23,15 @@ object DialogueCommand : Kommand({
     val messages = ArgumentType.Loop("messages",
         ArgumentType.Group(
             "messageGroup",
-            delay, message
+            senderArgument, receiver, delay, message
         )
     )
 
-    syntax(senderArgument, receiver, messages) {
+    syntax(messages) {
 
         (!messages).fold(0L) { initial, element ->
             Manager.scheduler.buildTask {
-                sender.sendMessage(Dialogue.create(context[senderArgument], context[receiver], element[message]))
+                sender.sendMessage(Dialogue.create(element[senderArgument], element[receiver], element[message]))
             }.delay(Duration.ofMillis(initial + element[delay].toMillis())).schedule()
 
             initial + element[delay].toMillis()
