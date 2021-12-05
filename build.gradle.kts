@@ -46,6 +46,9 @@ dependencies {
     // Add KStom
     compileOnly("com.github.Project-Cepi:KStom:5daaf786cf")
 
+    // Add Scriptable
+    compileOnly("com.github.Project-Cepi:Scriptable:c6aa15319a")
+
     // import kotlinx serialization
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1")
 }
