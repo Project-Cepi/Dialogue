@@ -21,9 +21,9 @@ object Dialogue {
         .append(message.color(NamedTextColor.GRAY))
 
     @ScriptableExport
-    fun create(sender: String, receiver: String, message: ScriptComponent) = create(sender, receiver, message.component)
+    fun create(sender: String, receiver: String, message: ScriptComponent) = ScriptComponent(create(sender, receiver, message.component))
 
     @ScriptableExport
-    fun create(sender: String, receiver: String, message: String) = create(sender, receiver, message.asMini())
+    fun create(sender: String, receiver: String, message: String) = ScriptComponent(create(sender, receiver, message.asMini()))
 
 }

@@ -44,7 +44,7 @@ dependencies {
     compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 
     // Add KStom
-    compileOnly("com.github.Project-Cepi:KStom:5daaf786cf")
+    compileOnly("com.github.Project-Cepi:KStom:6af27a215d")
 
     // Add Scriptable
     compileOnly("com.github.Project-Cepi:Scriptable:c6aa15319a")
