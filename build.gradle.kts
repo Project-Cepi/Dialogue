@@ -46,6 +46,9 @@ dependencies {
     // Add KStom
     compileOnly("com.github.Project-Cepi:KStom:6af27a215d")
 
+    // Add Kepi
+    compileOnly("com.github.Project-Cepi:Kepi:97404dc338")
+
     // Add Scriptable
     compileOnly("com.github.Project-Cepi:Scriptable:c6aa15319a")
 

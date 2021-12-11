@@ -5,6 +5,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import net.minestom.server.command.builder.arguments.ArgumentType
+import world.cepi.kepi.command.subcommand.applyHelp
 import world.cepi.kstom.Manager
 import world.cepi.kstom.adventure.asMini
 import world.cepi.kstom.command.kommand.Kommand
@@ -26,6 +27,21 @@ object DialogueCommand : Kommand({
             senderArgument, receiver, delay, message
         )
     )
+
+    applyHelp {
+        """
+            The dialogue command allows you to test and create dialogue scripts.
+            
+            Dialogue uses looped arguments, which repeats a certain argument.
+            
+            The dialogue argument is as follows: <yellow>(sender) (receiver) (delay) (message)
+            <blue>sender, receiver, <gray>and <blue>message<gray> need to be enclosed in quotes.
+            
+            You can repeat this syntax as many times as you want.
+            
+            Syntax: /dialogue (...messages)
+        """.trimIndent()
+    }
 
     syntax(messages) {
 
