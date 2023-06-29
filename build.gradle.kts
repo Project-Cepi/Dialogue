@@ -41,7 +41,7 @@ dependencies {
     compileOnly("com.github.Minestom:Minestom:2ef8e957a0")
 
     // Coroutines
-    compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
 
     // Add KStom
     compileOnly("com.github.Project-Cepi:KStom:6af27a215d")
